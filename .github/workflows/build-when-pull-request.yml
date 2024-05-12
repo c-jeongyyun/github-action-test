@@ -2,7 +2,8 @@ name: Build when Pull Request
 run-name: ${{ github.actor }} is building project
 on: 
     pull_request:
-        types: [created, edited]
+        types: [created]
+    push:
              
 jobs:
     build:
