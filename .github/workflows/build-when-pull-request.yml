@@ -3,7 +3,8 @@ run-name: ${{ github.actor }} is building project
 on: 
     pull_request:
         types:
-             - opened
+            - opened
+    push:
 jobs:
     build:
         runs-on: ubuntu-latest
